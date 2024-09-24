@@ -67,13 +67,17 @@ int main(void){ unsigned long volatile delay;
   EnableInterrupts();           // enable interrupts for the grader
   while(1){
     Delay(1);
+			// check if SW1 PF4 is pressed
 			SW1 = GPIO_PORTF_DATA_R&0x10;
-			if (!SW1) {
+			// if SW1 is pressed, PF4 = 0
+			if (!SW1) 
+				// toggle PF2 using bitwise XOR operator
 				GPIO_PORTF_DATA_R ^= 0x04;
+			// if SW1 is not pressed, PF4 = 1
 			} else {
+				// set PF2 led ON
 				GPIO_PORTF_DATA_R = 0x04;
 			}
-		
   }
 }
 
