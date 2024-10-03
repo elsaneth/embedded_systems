@@ -14,7 +14,7 @@
 
 // Constant declarations to access port registers using
 // from lab 6  but used port E
-// https://microcontrollerslab.com/use-gpio-pins-tm4c123g-tiva-launchpad/
+// https://users.ece.utexas.edu/~valvano/Volume1/E-Book/C6_MicrocontrollerPorts.htm
 #define GPIO_PORTE_DATA_R       (*((volatile unsigned long *)0x400243FC))
 #define GPIO_PORTE_DIR_R        (*((volatile unsigned long *)0x40024400))
 #define GPIO_PORTE_AFSEL_R      (*((volatile unsigned long *)0x40024420))
