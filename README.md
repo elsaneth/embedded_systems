@@ -15,4 +15,4 @@
 **Deadline 01.11.2024.**
 - Lab 9 - Functional debugging
 - Lab 12 - Interrupts
-- Lab 11 - FSM: Traffic light controller
+- Lab 10 - FSM: Traffic light controller
